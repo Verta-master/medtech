@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main>
+    <div class="login">
+      <div class="login__logo">
+        <img src="img/images/logo-1.png" alt="Московский центр иновационных технологий в здравоохранении" width="288" height="60">
+        <img src="img/images/logo-2.png" alt="Комплекс социального развития Москвы" width="138" height="54">
+      </div>
+      <p class="login__title"></p>
+      <form action="#" class="form">
+        <div class="form__fields">
+          <div class="form__line">
+            <div class="form__field">
+              <label for="surname" class="form__label">Фамилия*</label>
+              <input type="text" id="surname" class="form__input" required>
+            </div>
+            <div class="form__field">
+              <label for="name" class="form__label">Имя*</label>
+              <input type="text" id="name" class="form__input" required>
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="patronic" class="form__label">Отчество</label>
+            <input type="text" id="patronic" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="date" class="form__label">День, месяц и год рождения*</label>
+            <input type="date" id="date" class="form__input">
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">Электронная почта*</label>
+            <input type="email" id="email" class="form__input" required>
+          </div>
+          <div class="form__field">
+            <label for="phone" class="form__label">Номер телефона*</label>
+            <input type="tel" id="phone" class="form__input" required>
+          </div>
+        </div>
+        <div class="form__fields">
+          <label for="work" class="form__label">Место работы*</label>
+          <select id="work" class="form__select" required>
+            <option value="">Выберите из списка</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+        <div class="form__fields">
+          <label for="position" class="form__label">Должность*</label>
+          <textarea id="position" class="form__message" required></textarea>
+        </div>
+        <div class="form__fields">
+          <label for="education" class="form__label">Образование*</label>
+          <select id="education" class="form__select" required>
+            <option value="">Выберите из списка</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+        <div class="form__fields">
+          <label for="speciality" class="form__label">Специальность*</label>
+          <textarea id="speciality" class="form__message" required></textarea>
+        </div>
+        <div class="form__fields">
+          
+        </div>
+        <button type="submit" class="form__btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

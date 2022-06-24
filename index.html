@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrap">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">дискуссионная площадка</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">GCP</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">нормативная база</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">вопрос-ответ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__login">
+          <a href="#" class="header__link">вход</a>
+          <a href="#" class="header__link">регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo">
+      <div class="wrapper">
+        <div class="promo__wrap">
+          <div class="promo__logos">
+            <img src="img/images/logo-1.png" alt="Московский центр иновационных технологий в здравоохранении" width="288" height="60">
+            <img src="img/images/logo-2.png" alt="Комплекс социального развития Москвы" width="138" height="54">
+          </div>
+          <h1><span>Москва – врачам</span>Всё о клинических исследованиях в столице</h1>
+          <div class="promo__text">
+            <p>Онлайн-платформа, предоставляющая наиболее полноценную и актуальную информацию по клиническим исследованиям: ответы на тематические вопросы, обмен опытом, дискуссионная площадка со спикерами, обучающие семинары, проработка юридических вопросов</p>
+          </div>
+          <a href="#" class="btn promo__btn">Получить доступ к платформе</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="platform">
+      <div class="wrapper">
+        <div class="platform__title">
+          <p class="title">дискуссионная площадка</p>
+          <blockquote>Есть вопросы по юридическому сопровождению клинических исследований? Не уверены в процедуре набора добровольцев? Обсудите это на дискуссионной площадке нашей платформы!</blockquote>
+        </div>
+        <div class="platform__block platform__block--bg">
+          <p class="title-2">Выберите тему для будущей дискуссии</p>
+          <ul class="platform__tags">
+            <a data-fancybox data-src="#call" href="javascript:;" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</a>
+            <a href="#" class="platform__tag platform__tag--blue">ФОРУМ-2022</a>
+            <a href="#" class="platform__tag platform__tag--blue">НЕЙРОФОРУМ-2022</a>
+            <a href="#" class="platform__tag platform__tag--blue">Из медицины в Data Science. Из Data Science в медицину</a>
+            <a href="#" class="platform__tag">EXPO-RUSSIA KYRGYZSTAN 2022</a>
+            <a href="#" class="platform__tag">RUSSIA medical</a>
+            <a href="#" class="platform__tag">Злокачественная гипертермия: профилактика</a>
+          </ul>
+          <div class="platform__line">
+            <a href="#" class="link">выбрать тему</a>
+            <p class="platform__date">Сбор заявок заканчивается 29 июля</p>
+          </div>
+        </div>
+        <div class="platform__block">
+          <p class="title-2">Предложите свою тему или спикера</p>
+          <form action="#">
+            <input type="text" class="platform__input" placeholder="Напишите название темы или фио спикера">
+            <div class="platform__line">
+              <button type="submit" class="link">Отправить</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="event event--dark">
+          <div class="wrapper">
+            <p class="title">ближайшие мероприятия</p>
+            <div class="event__wrap">
+              <div class="swiper-container event__slider event__slider--01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide event__slide">
+                    <a data-fancybox data-src="#sign" href="javascript:;" class="event__link">
+                      <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                      <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                      <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                      <p class="more"><span>записаться</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">23 августа 2022 в 22:45</p>
+                      <p class="event__label">Вы записаны</p>
+                      <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                      <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                      <p class="more more--cancel"><span>отменить участие</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                      <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                      <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                      <p class="more"><span>записаться</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">23 августа 2022 в 22:45</p>
+                      <p class="event__label">Вы записаны</p>
+                      <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                      <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                      <p class="more more--cancel"><span>отменить участие</span></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev event__prev event__prev--01"></div>
+              <div class="swiper-button-next event__next event__next--01"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="wrapper">
+            <p class="title">прошедшие мероприятия</p>
+            <div class="event__wrap">
+              <div class="swiper-container event__slider event__slider--02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                      <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                      <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                      <p class="more"><span>смотреть</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">23 августа 2022 в 22:45</p>
+                      <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                      <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                      <p class="more"><span>смотреть</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                      <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                      <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                      <p class="more"><span>смотреть</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide event__slide">
+                    <a href="#" class="event__link">
+                      <p class="event__time">23 августа 2022 в 22:45</p>
+                      <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                      <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                      <p class="more"><span>смотреть</span></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev event__prev event__prev--02"></div>
+              <div class="swiper-button-next event__next event__next--02"></div>
+            </div>
+            <div class="event__banner">
+              <p>Скоро здесь появятся записи с прошедших мероприятий, следите за обновлениями</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="platform">
+      <div class="wrapper">
+        <div class="platform__title">
+          <p class="title">получить сертификат <span>GCP</span></p>
+          <blockquote>Сертификат надлежащей клинической практики (good clinical practice) – это подтверждение ваших знаний  и профессионального уровня в области клинических исследований</blockquote>
+        </div>
+        <ul class="platform__list">
+          <li class="platform__item">
+            <figure class="platform__icon">
+              <img src="img/icons/icon-1.svg" alt="Подайте документы через личный кабинет">
+            </figure>
+            <div class="platform__text">
+              <p>Подайте документы через личный кабинет</p>
+            </div>
+          </li>
+          <li class="platform__item">
+            <figure class="platform__icon">
+              <img src="img/icons/icon-2.svg" alt="Пройдите сертификационный курс обучения">
+            </figure>
+            <div class="platform__text">
+              <p>Пройдите сертификационный курс обучения</p>
+            </div>
+          </li>
+          <li class="platform__item">
+            <figure class="platform__icon">
+              <img src="img/icons/icon-3.svg" alt="Получите сертификат GCP">
+            </figure>
+            <div class="platform__text">
+              <p>Получите сертификат GCP</p>
+            </div>
+          </li>
+        </ul>
+        
+        <div class="course">
+          <p class="course__title"></p>
+          <ul class="course__list">
+            <li class="course__item">
+              <a href="#" class="course__link">
+                <div class="course__top">
+                  <p class="course__time">21 – 23 июня 2022</p>
+                  <p class="course__time">Осталось 256 мест</p>
+                </div>
+                <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                <div class="course__bottom">
+                  <p class="more"><span>записаться</span></p>
+                  <p class="course__clocks"><span>136 часов</span></p>
+                </div>
+              </a>
+            </li>
+            <li class="course__item">
+              <a href="#" class="course__link">
+                <div class="course__top">
+                  <p class="course__time">23 августа 2022</p>
+                  <p class="course__time">Осталось 256 мест</p>
+                </div>
+                <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                <div class="course__bottom">
+                  <p class="more"><span>записаться</span></p>
+                  <p class="course__clocks"><span>136 часов</span></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="base">
+          <p class="title">нормативная база</p>
+          <div class="base__wrap">
+            <div class="base__block">
+              <p class="base__title">Международные документы</p>
+              <ul class="base__list">
+                <li class="base__item"><a href="#">Интегрированное дополнение к ICH E6(R1): Руководство по надлежащей клинической практике E6(R2) / Integrated Addendum to ICH E6(R1): Guideline for Good Clinical Practice E6(R2)</a></li>
+                <li class="base__item"><a href="#">Регламент (ЕС) N 536/2014 Европейского Парламента и Совета ЕС о клинических испытаниях лекарственных средств, предназначенных для использования человеком, и об отмене директивы 2001/20/ЕС</a></li>
+                <li class="base__item"><a href="#">Хельсинкская декларация ВМА / Declaration of Helsinki</a></li>
+                <li class="base__item">
+                  <a href="#">Директива 2001/20/ЕС Европейского Парламента и Совета от 4 апреля 2001 года</a>
+                  <p>по сближению законодательств, правил и административных постановлений стран-участниц ЕС, касающихся реализации качественной клинической практики при проведении клинических исследований лекарственных средств для применения у людей</p>
+                </li>
+                <li class="base__item">
+                  <a href="#">Директива Комиссии 2005/28/EC от 8 апреля 2005 г.</a>
+                  <p>устанавливающая принципы и детальные правила качественной клинической практики при проведении клинических исследований лекарственных средств для человека, а также требования к процедуре выдачи разрешения на производство или импорт таких средств</p>
+                </li>
+              </ul>
+            </div>
+            <div class="base__block base__block--links">
+              <p class="base__title">полезные ссылки</p>
+              <ul class="base__list base__list--nomarker">
+                <li class="base__item"><a href="#">Министерство здравоохранения РФ</a></li>
+                <li class="base__item"><a href="#">Росздравнадзор</a></li>
+                <li class="base__item"><a href="#">Государственный реестр лекарственных средств</a></li>
+                <li class="base__item"><a href="#">Реестр выданных разрешений на проведение клинических исследований лекарственных препаратов</a></li>
+                <li class="base__item"><a href="#">Реестр исследователей, проводящих клинические исследования лекарственных препаратов</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq">
+      <div class="wrapper">
+        <p class="title">вопрос-ответ</p>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <p class="faq__title">Что такое клиническое исследование?</p>
+            <div class="faq__dropdown">
+              <p>Это научное исследование, в котором принимают участие люди с целью оценки эффективности и безопасности лекарственного препарата или расширения показаний к применению уже известного лекарственного препарата. Такая процедура является неотъемлемым этапом разработки лекарственного препарата, которая предшествует его регистрации и медицинскому применению. Все клинические исследования проводятся с соблюдением законодательства РФ (61 ФЗ, 200 н, ГОСТ «Надлежащая клиническая практика» и т.д.), решений ЕАЭС, Хельсинской декларации и правил надлежащей клинической практики GCP (GCP– Good Clinical Practice «Надлежащая клиническая практика»). Следование правилам позволяет гарантировать, что права пациентов, участвующих в исследовании, защищены, а результаты исследования – достоверны.</p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">С какой целью проводятся клинические исследования?</p>
+            <div class="faq__dropdown">
+              <p>Современная медицина и фармация активно развиваются, помогая увеличить продолжительность и качество жизни людей. Клинические исследования являются важнейшей частью разработки новых препаратов. Исследования дают возможность понять, насколько препарат эффективен, безопасен, узнать его побочные эффекты и влияние на организм. Инициаторами проведения клинических исследований чаще всего являются фармацевтические и биотехнологические компании, которые непосредственно участвуют в разработке и анализе изучаемого лекарственного препарата. Фармацевтические  компании могут подать заявку на регистрацию препарата только по окончании клинического исследования, сбора необходимых данных и всестороннего анализа их результатов.</p>
+              <p>Препарат может получить отказ в регистрации, если его действие было признано недостаточно эффективным, препарат оказался небезопасен для человека, компания предоставила неполный или недостоверный пакет информации о результатах клинического исследования. Благодаря клиническим исследованиям ученые лучше понимают то или иное заболевание, продвигаясь в поиске эффективных и безопасных методов лечения. Если результаты исследований подтверждают эффективность и безопасность препарата, он получает регистрацию на территории страны, и врачи могут назначать данный препарат для лечения и профилактики заболеваний.</p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Зачем принимать участие в клинических исследованиях?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Кто может принимать участие в клинических исследованиях?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Фазы клинических исследований</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Что происходит во время клинического исследования?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Что такое информированное согласие?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Какова продолжительность исследования?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Какие права есть у пациентов-участников исследований?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Какие обязанности возложены на участника клинического исследования?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <p class="faq__title">Как обеспечивается безопасность участников исследования?</p>
+            <div class="faq__dropdown">
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <div class="reg">
+      <div class="wrapper">
+        <div class="reg__wrap">
+          <p class="title">Зарегистрируйтесь для доступа к обучающей платформе</p>
+          <a href="#" class="btn reg__btn">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <span>(с) 2021, московский центр инновационных технологий в здравоохранении</span>
+        <a href="#">политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <div class="modal__wrap">
+      <figure class="modal__icon">
+        <img src="img/icons/tick.svg" alt="Спасибо за ваш голос" width="114" height="72">
+      </figure>
+      <p class="modal__title">Спасибо за ваш голос</p>
+      <p>Скоро мы запланируем мероприятие на наиболее востребованную тему. Новое мероприятие появится в разделе «Ближайшие мероприятия»</p>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="proposal" class="modal">
+    <div class="modal__wrap">
+      <figure class="modal__icon">
+        <img src="img/icons/plus.svg" alt="Спасибо за ваше предложение" width="120" height="120">
+      </figure>
+      <p class="modal__title">Спасибо за ваше предложение</p>
+      <p>Мы обработаем все предложения и наиболее востребованные темы появятся в разделе «Ближайшие мероприятия»</p>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="sign" class="popup">
+    <p class="popup__title">Спасибо, вы записались на мероприятие «EXPO-RUSSIA KYRGYZSTAN 2022»</p>
+    <ul class="popup__list">
+      <li>Информация о месте проведения и вашей записи отправлена вам на e-mail</li>
+      <li>За сутки до мероприятия пользователю на указанную почту приходит напоминание о мероприятии на которое он записан.</li>
+    </ul>
+    <a href="#" class="popup__link">вернуться на сайт</a>
+  </div>
+  
+  <div style="display: none;" id="reg" class="popup">
+    <p class="popup__title">Для записи на мероприяти вам необходимо пройти процедуру регистрации и верификации</p>
+    <a href="#" class="popup__link">зарегистрироваться</a>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.event__slider--01', {
+      navigation: {
+        nextEl: '.event__next--01',
+        prevEl: '.event__prev--01',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+    
+    var mySwiper = new Swiper ('.event__slider--02', {
+      navigation: {
+        nextEl: '.event__next--02',
+        prevEl: '.event__prev--02',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+  </script>
+</body>
+</html>
