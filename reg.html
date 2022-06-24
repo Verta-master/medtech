@@ -14,7 +14,7 @@
         <img src="img/images/logo-1.png" alt="Московский центр иновационных технологий в здравоохранении" width="288" height="60">
         <img src="img/images/logo-2.png" alt="Комплекс социального развития Москвы" width="138" height="54">
       </div>
-      <p class="login__title"></p>
+      <p class="login__title">Пожалуйста, заполните поля для регистрации</p>
       <form action="#" class="form">
         <div class="form__fields">
           <div class="form__line">
@@ -69,10 +69,33 @@
           <textarea id="speciality" class="form__message" required></textarea>
         </div>
         <div class="form__fields">
-          
+          <label for="speciality" class="form__label">Профессиональная переподготовка (специальность) </label>
+          <textarea id="speciality" class="form__message" placeholder="Укажите название специальности"></textarea>
+        </div>
+        <div class="form__fields">
+          <label for="speciality" class="form__label">Наличие действующего сертификата специалиста/аккредитация</label>
+          <textarea id="speciality" class="form__message" placeholder="Укажите специальность действующего сертификата/аккреди..."></textarea>
+        </div>
+        <div class="form__fields">
+          <p class="login__subtitle">Придумайте пароль для учётной записи личного кабинета</p>
+          <input type="password" class="form__input" placeholder="Придумайте пароль">
+          <input type="password" class="form__input" placeholder="Повторите ваш пароль">
+        </div>
+        <div class="form__fields">
+          <input type="checkbox" id="checkbox" class="form__checkbox">
+          <label for="checkbox" class="form__checkbox-label">Я даю своё <a href="#">согласие на обработку  персональных данных</a></label>
         </div>
         <button type="submit" class="form__btn">Зарегистрироваться</button>
       </form>
+      <div class="login__comment login__comment--top">Поля со звёздочкой обязательны к заполению</div>
+      <div class="login__comment">
+        <ul>
+          <li>Пароль не может быть короче 8 символов</li>
+          <li>В пароле должна быть минимум одна цифра</li>
+          <li>В пароле должна быть минимум одна прописная буква</li>
+          <li>В пароле должна быть минимум одна строчная буква</li>
+        </ul>
+      </div>
     </div>
   </main>
 </body>
