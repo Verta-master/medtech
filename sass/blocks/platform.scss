@@ -1,11 +1,15 @@
 .platform {
   position: relative;
-  margin-top: -40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 20px;
   mix-blend-mode: normal;
   border-radius: 40px;
   background-color: #FFFFFF;
+  
+  &--top {
+    margin-top: -40px;
+  }
 }
 .platform__title {
   display: flex;
@@ -105,5 +109,39 @@
   
   &::placeholder {
     color: #828282;
+  }
+}
+.platform__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+  list-style: none;
+  display: flex;
+}
+.platform__item {
+  width: 370px;
+  margin-right: 32px;
+  
+  &:nth-child(2) {
+    width: 415px;
+  }
+}
+.platform__icon {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+.platform__text {
+  padding: 24px 40px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333;
+  border: 1px solid #C6D6FF;
+  border-radius: 32px;
+  
+  p {
+    margin: 0;
   }
 }
