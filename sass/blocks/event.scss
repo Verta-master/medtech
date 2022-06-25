@@ -121,6 +121,7 @@
 .event__banner {
   width: 100%;
   height: 380px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,5 +137,19 @@
   p {
     margin: 0;
     max-width: 650px;
+  }
+  &--grey {
+    color: #094DF1;
+    background-image: linear-gradient(94.54deg, #FDFDFD 1.14%, #F4F4F4 102.25%);
+    
+    p {
+      max-width: 725px;
+      position: relative;
+      padding-top: 80px;
+      background-image: url(../img/icons/icon-2.svg);
+      background-repeat: no-repeat;
+      background-size: 64px 64px;
+      background-position: top left;
+    }
   }
 }

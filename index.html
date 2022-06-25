@@ -88,7 +88,7 @@
             <label for="checkbox7" class="platform__tag">Злокачественная гипертермия:<br>профилактика</label>
           </div>
           <div class="platform__line">
-            <a href="#" class="link">выбрать тему</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="link">выбрать тему</a>
             <p class="platform__date">Сбор заявок заканчивается 29 июля</p>
           </div>
         </div>
@@ -118,7 +118,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide event__slide">
-                    <a href="#" class="event__link">
+                    <a data-fancybox data-src="#cancel" href="javascript:;" class="event__link">
                       <p class="event__time">23 августа 2022 в 22:45</p>
                       <p class="event__label">Вы записаны</p>
                       <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
@@ -127,7 +127,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide event__slide">
-                    <a href="#" class="event__link">
+                    <a data-fancybox data-src="#reg" href="javascript:;" class="event__link">
                       <p class="event__time">21 – 23 июня 2022 в 22:45</p>
                       <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
                       <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
@@ -148,6 +148,13 @@
               <div class="swiper-button-prev event__prev event__prev--01"></div>
               <div class="swiper-button-next event__next event__next--01"></div>
             </div>
+<!-- This banner is shown only if there is no slider-->
+<!--
+            <div class="event__banner event__banner--grey">
+              <p>Здесь скоро появится мероприятие, ждите обновление</p>
+            </div>
+-->
+<!-- End -->
           </div>
         </div>
 
@@ -194,11 +201,13 @@
               <div class="swiper-button-prev event__prev event__prev--02"></div>
               <div class="swiper-button-next event__next event__next--02"></div>
             </div>
-<!-- This banner is shown only if there is no slider
+<!-- This banner is shown only if there is no slider-->
+<!--
             <div class="event__banner">
               <p>Скоро здесь появятся записи с прошедших мероприятий, следите за обновлениями</p>
             </div>
 -->
+<!-- End -->
           </div>
         </div>
       </div>
@@ -401,35 +410,64 @@
   <div style="display: none;" id="call" class="modal">
     <div class="modal__wrap">
       <figure class="modal__icon">
-        <img src="img/icons/tick.svg" alt="Спасибо за ваш голос" width="114" height="72">
+        <img src="img/icons/tick.png" alt="Спасибо за ваш голос" width="132" height="98">
       </figure>
       <p class="modal__title">Спасибо за ваш голос</p>
       <p>Скоро мы запланируем мероприятие на наиболее востребованную тему. Новое мероприятие появится в разделе «Ближайшие мероприятия»</p>
+      <a href="#" class="modal__link">вернуться на сайт</a>
     </div>
   </div>
   
   <div style="display: none;" id="proposal" class="modal">
     <div class="modal__wrap">
-      <figure class="modal__icon">
-        <img src="img/icons/plus.svg" alt="Спасибо за ваше предложение" width="120" height="120">
-      </figure>
       <p class="modal__title">Спасибо за ваше предложение</p>
       <p>Мы обработаем все предложения и наиболее востребованные темы появятся в разделе «Ближайшие мероприятия»</p>
+      <a href="#" class="modal__link">вернуться на сайт</a>
     </div>
   </div>
   
   <div style="display: none;" id="sign" class="popup">
-    <p class="popup__title">Спасибо, вы записались на мероприятие «EXPO-RUSSIA KYRGYZSTAN 2022»</p>
-    <ul class="popup__list">
-      <li>Информация о месте проведения и вашей записи отправлена вам на e-mail</li>
-      <li>За сутки до мероприятия пользователю на указанную почту приходит напоминание о мероприятии на которое он записан.</li>
-    </ul>
-    <a href="#" class="popup__link">вернуться на сайт</a>
+    <div class="popup__wrap">
+      <p class="popup__title">Спасибо, вы записались на мероприятие «EXPO-RUSSIA KYRGYZSTAN 2022»</p>
+      <ul class="popup__list">
+        <li>Информация о месте проведения и вашей записи отправлена вам на e-mail</li>
+        <li>За сутки до мероприятия пользователю на указанную почту приходит напоминание о мероприятии на которое он записан.</li>
+      </ul>
+      <a href="#" class="popup__link">вернуться на сайт</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="cancel" class="popup">
+    <div class="popup__wrap">
+      <p class="popup__title">Вы действительно хотите отменить участие в «EXPO-RUSSIA KYRGYZSTAN 2022»?</p>
+      <div class="popup__line">
+        <a href="#" class="popup__link">вернуться на сайт</a>
+        <a href="#" class="popup__link popup__link--red">подтвердить отмену</a>
+      </div>
+    </div>
   </div>
   
   <div style="display: none;" id="reg" class="popup">
-    <p class="popup__title">Для записи на мероприяти вам необходимо пройти процедуру регистрации и верификации</p>
-    <a href="#" class="popup__link">зарегистрироваться</a>
+    <div class="popup__wrap">
+      <p class="popup__title">Для записи на мероприяти вам необходимо пройти процедуру регистрации и верификации</p>
+      <a href="#" class="popup__link">зарегистрироваться</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="call2" class="popup">
+    <div class="popup__wrap">
+      <p class="popup__title popup__title--top">Спасибо за ваш голос</p>
+      <p>Скоро мы запланируем мероприятие на наиболее востребованную тему. Новое мероприятие появится в разделе «Ближайшие мероприятия»</p>
+      <a href="#" class="popup__link">вернуться на сайт</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="proposal2" class="popup">
+    <div class="popup__wrap">
+      <p class="popup__title popup__title--top">Спасибо за ваше предложение</p>
+      <p>Мы обработаем все предложения и наиболее востребованные темы появятся в разделе «Ближайшие мероприятия»</p>
+      <a href="#" class="popup__link">вернуться на сайт</a>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
