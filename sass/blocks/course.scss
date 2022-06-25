@@ -1,6 +1,6 @@
 .course {
   padding-bottom: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
   border-bottom: 1px dashed #E0E0E0;
 }
 .course__title {
@@ -21,6 +21,7 @@
 }
 .course__item {
   width: 49%;
+  height: 380px;
   background-image: url(../img/images/banner-1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,10 +39,24 @@
   width: 100%;
   height: 100%;
   padding: 20px;
+  padding-bottom: 24px;
   text-decoration: none;
   
   .title-3 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    transition: ease-out 0.3s;
+  }
+  .more {
+    margin-top: auto;
+    transition: ease-out 0.3s;
+  }
+  &:hover,
+  &:active {
+    .more,
+    .title-3 {
+      color: #094DF1;
+      transition: ease-out 0.3s;
+    }
   }
 }
 .course__bottom,
@@ -60,6 +75,20 @@
   font-size: 18px;
   line-height: 26px;
 }
+.course__online {
+  width: 78px;
+  height: 28px;
+  margin: 0;
+  padding: 2px 6px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #333333;
+  border-radius: 14px;
+}
 .course__clocks {
   margin: 0;
   padding: 2px 6px;
@@ -67,7 +96,7 @@
   text-transform: uppercase;
   color: #333333;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
   border: 1px solid #000000;
   border-radius: 16px;
   

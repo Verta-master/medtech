@@ -35,6 +35,12 @@
         <div class="header__login">
           <a href="#" class="header__link">вход</a>
           <a href="#" class="header__link">регистрация</a>
+<!--  If a user already logged        -->
+<!--
+          <a href="#" class="header__user">Иванов А.И</a>
+          <a href="#" class="header__logout">выйти</a>
+-->
+<!--  End     -->
         </div>
       </div>
     </div>
@@ -66,13 +72,20 @@
         <div class="platform__block platform__block--bg">
           <p class="title-2">Выберите тему для будущей дискуссии</p>
           <div class="platform__tags">
-            <a data-fancybox data-src="#call" href="javascript:;" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</a>
-            <a href="#" class="platform__tag platform__tag--blue">ФОРУМ-2022</a>
-            <a href="#" class="platform__tag platform__tag--blue">НЕЙРОФОРУМ-2022</a>
-            <a href="#" class="platform__tag platform__tag--blue">Из медицины в Data Science. Из<br>Data Science в медицину</a>
-            <a href="#" class="platform__tag">EXPO-RUSSIA KYRGYZSTAN 2022</a>
-            <a href="#" class="platform__tag">RUSSIA medical</a>
-            <a href="#" class="platform__tag">Злокачественная гипертермия:<br>профилактика</a>
+            <input type="checkbox" id="checkbox1" class="platform__checkbox">
+            <label for="checkbox1" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</label>
+            <input type="checkbox" id="checkbox2" class="platform__checkbox" checked>
+            <label for="checkbox2" class="platform__tag">ФОРУМ-2022</label>
+            <input type="checkbox" id="checkbox3" class="platform__checkbox" checked>
+            <label for="checkbox3" class="platform__tag">НЕЙРОФОРУМ-2022</label>
+            <input type="checkbox" id="checkbox4" class="platform__checkbox" checked>
+            <label for="checkbox4" class="platform__tag">Из медицины в Data Science. Из<br>Data Science в медицину</label>
+            <input type="checkbox" id="checkbox5" class="platform__checkbox">
+            <label for="checkbox5" class="platform__tag">EXPO-RUSSIA KYRGYZSTAN 2022</label>
+            <input type="checkbox" id="checkbox6" class="platform__checkbox">
+            <label for="checkbox6" class="platform__tag">RUSSIA medical</label>
+            <input type="checkbox" id="checkbox7" class="platform__checkbox">
+            <label for="checkbox7" class="platform__tag">Злокачественная гипертермия:<br>профилактика</label>
           </div>
           <div class="platform__line">
             <a href="#" class="link">выбрать тему</a>
@@ -98,6 +111,7 @@
                   <div class="swiper-slide event__slide">
                     <a data-fancybox data-src="#sign" href="javascript:;" class="event__link">
                       <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                      <p class="event__label event__label--online">онлайн</p>
                       <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
                       <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
                       <p class="more"><span>записаться</span></p>
@@ -192,7 +206,7 @@
     
     <section class="platform">
       <div class="wrapper">
-        <div class="platform__title">
+        <div class="platform__title platform__title--light">
           <p class="title">получить сертификат <span>GCP</span></p>
           <blockquote>Сертификат надлежащей клинической практики (good clinical practice) – это подтверждение ваших знаний  и профессионального уровня в области клинических исследований</blockquote>
         </div>
@@ -230,7 +244,7 @@
               <a href="#" class="course__link">
                 <div class="course__top">
                   <p class="course__time">21 – 23 июня 2022</p>
-                  <p class="course__time">Осталось 256 мест</p>
+                  <p class="course__online">онлайн</p>
                 </div>
                 <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
                 <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
