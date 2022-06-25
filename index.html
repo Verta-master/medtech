@@ -363,17 +363,15 @@
             </div>
           </li>
         </ul>
-      </div>
-    </section>
-    
-    <div class="reg">
-      <div class="wrapper">
-        <div class="reg__wrap">
-          <p class="title">Зарегистрируйтесь для доступа к обучающей платформе</p>
-          <a href="#" class="btn reg__btn">Зарегистрироваться</a>
+        
+        <div class="reg">
+          <div class="reg__wrap">
+            <p class="title">Зарегистрируйтесь для доступа к обучающей платформе</p>
+            <a href="#" class="btn reg__btn">Зарегистрироваться</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   
   <footer class="footer">
@@ -447,6 +445,14 @@
       slidesPerView: 'auto',
       spaceBetween: 20,
     });
+  </script>
+  
+<!-- FAQ -->
+  <script>
+    $('.faq__title').click(function() {
+      $(this).toggleClass('faq__title--top');
+      $(this).next().slideToggle();
+    })
   </script>
 </body>
 </html>
