@@ -1,0 +1,109 @@
+.platform {
+  position: relative;
+  margin-top: -40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  mix-blend-mode: normal;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+}
+.platform__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  
+  .title {
+    width: 50%;
+    margin: 0;
+  }
+  blockquote {
+    width: 50%;
+    padding: 13px 40px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    border-left: 8px solid #094DF1;
+  }
+}
+.platform__block {
+  margin-bottom: 8px;
+  padding: 40px 112px;
+  padding-bottom: 32px;
+  background: #F9F9F9;
+  mix-blend-mode: normal;
+  border-radius: 40px;
+  
+  &--bg {
+    background-image: url(../img/images/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .platform__line {
+      border-top: 1px dashed #333;
+    }
+  }
+}
+.platform__tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+.platform__tag {
+  height: 64px;
+  max-width: 516px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  margin-bottom: 20px;
+  padding: 8px 19px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+  border: 1px solid #333333;
+  border-radius: 110px;
+  
+  &--blue {
+    color: #F9F9F9;
+    background-color: #094DF1;
+    border-color: #094DF1;
+  }
+}
+.platform__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px dashed #E0E0E0;
+}
+.platform__date {
+  max-width: 275px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  color: #333;
+}
+.platform__input {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  box-shadow: 0px 11px 34px rgba(36, 33, 51, 0.08);
+  border-radius: 12px;
+  
+  &::placeholder {
+    color: #828282;
+  }
+}
