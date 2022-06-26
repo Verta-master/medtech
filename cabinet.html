@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--cabinet">
+    <div class="wrapper">
+      <div class="header__wrap">
+        
+        <div class="header__login">
+          <a href="#" class="header__notification header__notification--active"></a>
+          <a href="#" class="header__user">Иванов А.И</a>
+          <button type="button" class="header__down"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="cabinet">
+      <div class="wrapper">
+        <p class="cabinet__label">Верифицирован</p>
+        <p class="cabinet__label cabinet__label--unverified">Неверифицирован</p>
+        <p class="cabinet__title">Профиль пользователя: <span>Иванов Иван Иванович</span></p>
+        <form action="#" class="form">
+          <div class="form__columns">
+            <div class="form__column">
+              <div class="form__fields">
+                <div class="form__line">
+                  <div class="form__field">
+                    <label for="name" class="form__label">Имя</label>
+                    <input type="text" id="name" class="form__input" value="Иван">
+                  </div>
+                  <div class="form__field">
+                    <label for="surname" class="form__label">Фамилия</label>
+                    <input type="text" id="surname" class="form__input" value="Иванов">
+                  </div>
+                  <div class="form__field">
+                    <label for="patronic" class="form__label">Отчество</label>
+                    <input type="text" id="patronic" class="form__input" value="Иванов">
+                  </div>
+                </div>
+                <div class="form__field">
+                  <label for="date" class="form__label">Дата рождения</label>
+                  <input type="date" id="date" class="form__input" value="27.06.1991">
+                </div>
+                <div class="form__field">
+                  <label for="phone" class="form__label">Контактный телефон</label>
+                  <input type="tel" id="phone" class="form__input" value="8 912 345-67-89">
+                </div>
+                <div class="form__field form__field--verified">
+                  <label for="email" class="form__label">Email</label>
+                  <input type="email" id="email" class="form__input" value="ivanovii@zdrav.mos.ru">
+                </div>
+              </div>
+              <div class="form__fields">
+                <div class="form__field">
+                  <label for="work" class="form__label">Место работы</label>
+                  <input type="text" id="work" class="form__input" value="Городская клиническая больница имени Е.О.Мухина">
+                </div>
+                <div class="form__field">
+                  <label for="position" class="form__label">Должность</label>
+                  <input type="text" id="position" class="form__input" value="Кардиолог">
+                </div>
+                <div class="form__field">
+                  <label for="education" class="form__label">Образование</label>
+                  <input type="text" id="education" class="form__input" value="Высшее">
+                </div>
+                <div class="form__field">
+                  <label for="speciality" class="form__label">Специальность</label>
+                  <input type="text" id="speciality" class="form__input" value="Кардиология">
+                </div>
+                <div class="form__field">
+                  <label for="speciality" class="form__label">Профессиональная переподготовка (специальность)</label>
+                  <input type="text" id="speciality" class="form__input" value="Урология">
+                </div>
+                <div class="form__field">
+                  <label for="speciality" class="form__label">Наличие действующего сертификата специалиста/аккредитация</label>
+                  <input type="text" id="speciality" class="form__input" value="Сертификат специалиста №12312312-009-123">
+                </div>
+              </div>
+              <button type="submit" class="btn form__save form--disabled">Сохранить изменения</button>
+            </div>
+            <aside class="form__aside">
+              <div class="form__photo">
+                <figure class="form__ava">
+                  <img src="img/icons/person.svg" alt="Загрузить  фото">
+                </figure>
+                <span>JPEG или PNG размером не более 1 мб</span>
+                <input type="file" id="file" class="form__upload">
+                <label for="file" class="form__upload-label">Загрузить  фото</label>
+              </div>
+              <a href="#" class="form__password">Изменить текущий пароль</a>
+            </aside>
+          </div>
+        </form>
+        
+        <div class="cabinet__docs">
+          <p class="cabinet__title">Пакет документов</p>
+          <ul class="cabinet__list">
+            <li class="cabinet__item">
+              <a href="#" class="cabinet__download" download>Заявление о зачислении на обучение, подписанное личной подписью поступающего, с отметкой о согласии на обработку персональных данных.docx</a>
+            </li>
+            <li class="cabinet__item">
+              <a href="#" class="cabinet__download" download>Путёвка (для лиц, обучающихся за счёт бюджета города Москвы).pdf</a>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file1" class="cabinet__upload">
+              <label for="file1" class="cabinet__upload-file">Копия паспорта (первая страница и страница с пропиской)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file2" class="cabinet__upload">
+              <label for="file2" class="cabinet__upload-file">Копия документа государственного образца об образовании (в соответствии с требованием программы обучения)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file3" class="cabinet__upload">
+              <label for="file3" class="cabinet__upload-file">Копия диплома об окончании ординатуры (при наличии)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file4" class="cabinet__upload">
+              <label for="file4" class="cabinet__upload-file">Копия действующего сертификата специалиста или копия свидетельства об аккредитации специалиста (для медицинских и фармацевтических работников)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file5" class="cabinet__upload">
+              <label for="file5" class="cabinet__upload-file">Копия документа о квалификации (удостоверение о повышении квалификации, подтверждающее освоение дополнительной профессиональной программы)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file6" class="cabinet__upload">
+              <label for="file6" class="cabinet__upload-file">Копия трудовой книжки, заверенной сотрудником отдела кадров, содержащей запись «работает по настоящее время» или справка о наличии стажа работы в соответствии с квалификационными требованиями</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file7" class="cabinet__upload">
+              <label for="file7" class="cabinet__upload-file">Копия документа об изменении фамилии, имени, отчества (при наличии расхождений в вышеуказанных документах)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file8" class="cabinet__upload">
+              <label for="file8" class="cabinet__upload-file">Копия документа о страховом номере индивидуального лицевого счёта (копия СНИЛС)</label>
+            </li>
+            <li class="cabinet__item">
+              <input type="file" id="file9" class="cabinet__upload">
+              <label for="file9" class="cabinet__upload-file">Копия свидетельства о нострификации документов об образовании (для лиц, имеющих диплом иностранного государства)</label>
+            </li>
+          </ul>
+          <p class="cabinet__comment">Для лиц, зарегистрированных на территории республики Крым и города Севастополя, копия свидетельства о нострификации документов об образовании не требуется</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>
