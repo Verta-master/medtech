@@ -15,9 +15,14 @@
       margin-bottom: 4px;
     }
     .form__line {
+      margin-bottom: 24px;
+      
       .form__field {
-        width: 30%;
+        width: 32%;
       }
+    }
+    .form__field {
+      margin-bottom: 29px;
     }
   }
 }
@@ -32,7 +37,65 @@
   }
 }
 .form__field {
+  position: relative;
   margin-bottom: 24px;
+  
+  &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      right: 14px;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: none;
+    }
+  &--verified {
+    &::after {
+      display: block;
+      background-image: url(../img/icons/circle_check.svg);
+    }
+  }
+  &--clock {
+    &::after {
+      display: block;
+      background-image: url(../img/icons/watch_later.svg);
+    }
+  }
+  &--nopass {
+    &::after {
+      display: block;
+      background-image: url(../img/icons/eye.svg);
+    }
+  }
+  &--pass {
+    &::after {
+      display: block;
+      background-image: url(../img/icons/eye-closed.svg);
+    }
+  }
+  &--error {
+    .form__input {
+      border-color: #EB5757;
+    }
+    &::before {
+      content: "Это поле обязательно к заполнению";
+      position: absolute;
+      top: 104%;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      padding-left: 16px;
+      color: #EB5757;
+      font-size: 12px;
+      line-height: 16px;
+      background-image: url(../img/icons/error.svg);
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: left center;
+    }
+  }
 }
 .form__label {
   display: block;
@@ -190,6 +253,7 @@
 }
 .form__photo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 34px;
   padding-bottom: 20px;
@@ -208,6 +272,7 @@
   align-items: center;
   width: 160px;
   height: 40px;
+  margin-left: auto;
   font-size: 18px;
   line-height: 20px;
   color: #333;
@@ -234,7 +299,7 @@
 .form__save {
   width: 229px;
   height: 40px;
-  margin-top: 48px;
+  margin-top: 40px;
   font-size: 18px;
   line-height: 24px;
   border-radius: 4px;
@@ -243,4 +308,99 @@
   background: #BDBDBD;
   border-color: #BDBDBD;
   pointer-events: none;
+}
+.form__message {
+  position: absolute;
+  top: 104%;
+  left: 0;
+  right: 0;
+  padding: 12px 18px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+  background: #FFF0B0;
+  border-radius: 4px;
+}
+.form__edit {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  width: 70px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 4px 4px;
+}
+.form__editbtn {
+  width: 26px;
+  height: 26px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease-out 0.3s;
+  
+  &--ok {
+    background-image: url(../img/icons/check.svg);
+    background-size: 20px 20px;
+    
+    &:hover,
+    &:active {
+      background-color: #27AE60;
+      transition: ease-out 0.3s;
+    }
+  }
+  &--cancel {
+    background-image: url(../img/icons/cross.svg);
+    background-size: 12px 12px;
+    
+    &:hover,
+    &:active {
+      background-color: #EB5757;
+      transition: ease-out 0.3s;
+    }
+  }
+}
+.form__btns {
+  display: flex;
+  align-items: center;
+}
+.form__backbtn {
+  width: 79px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 1px solid #C1C1C1;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: #094DF1;
+    border-color: #094DF1;
+    transition: ease-out 0.3s;
+  }
+}
+.form__unpdate {
+  width: 107px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2F7CF0;
+  border-color: #2F7CF0;
+  border-radius: 4px;
 }

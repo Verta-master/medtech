@@ -1,0 +1,36 @@
+.breadcrumbs {
+  margin-top: 163px;
+  margin-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #828282;
+  text-decoration: none;
+}
+a.breadcrumbs__link {
+  color: #333;
+  margin-right: 2px;
+  transition: ease-out 0.3s;
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icons/divider.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:hover,
+  &:active {
+    color: #094DF1;
+    transition: ease-out 0.3s;
+  }
+}
