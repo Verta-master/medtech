@@ -1,6 +1,25 @@
 .form {
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  
+  &--cabinet {
+    .form__input {
+      font-size: 14px;
+      color: #333;
+      background-color: #fff;
+    }
+    .form__label {
+      font-size: 12px;
+      line-height: 16px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .form__line {
+      .form__field {
+        width: 30%;
+      }
+    }
+  }
 }
 .form__fields {
   padding: 24px 20px;
@@ -55,6 +74,9 @@
     color: #828282;
     opacity: 1;
   }
+  &:focus {
+    border-color: #094DF1;
+  }
 }
 .form__select {
   appearance: none;
@@ -82,6 +104,7 @@
     margin-bottom: 0;
   }
 }
+.form__upload,
 .form__checkbox {
   display: none;
 }
@@ -129,4 +152,95 @@
   font-size: 20px;
   line-height: 32px;
   color: #333;
+}
+.form__columns {
+  display: flex;
+  justify-content: space-between;
+}
+.form__column {
+  width: 50%;
+}
+.form__aside {
+  width: 33.3%;
+}
+.form__password {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #094DF1;
+  text-decoration: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/lock.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+.form__photo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.12);
+  
+  span {
+    width: 178px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+  }
+}
+.form__upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #333;
+  border: 1px solid #C1C1C1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: #094DF1;
+    border-color: #094DF1;
+    transition: ease-out 0.3s;
+  }
+}
+.form__ava {
+  width: 70px;
+  margin-right: 16px;
+  
+  img {
+    display: block;
+  }
+}
+.form__save {
+  width: 229px;
+  height: 40px;
+  margin-top: 48px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.form__disabled {
+  background: #BDBDBD;
+  border-color: #BDBDBD;
+  pointer-events: none;
 }
