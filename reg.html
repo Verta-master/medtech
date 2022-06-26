@@ -9,92 +9,100 @@
 </head>
 <body>
   <main class="main-white">
-    <div class="login">
+    <div class="login login--reg">
       <div class="login__logo">
         <img src="img/images/logo-1.png" alt="Московский центр иновационных технологий в здравоохранении" width="288" height="60">
         <img src="img/images/logo-2.png" alt="Комплекс социального развития Москвы" width="138" height="54">
       </div>
       <p class="login__title">Пожалуйста, заполните поля для регистрации</p>
-      <form action="#" class="form">
-        <div class="form__fields">
-          <div class="form__line">
-            <div class="form__field">
-              <label for="surname" class="form__label">Фамилия*</label>
-              <input type="text" id="surname" class="form__input" required>
+      <div class="login__wrap">
+        <form action="#" class="form">
+          <div class="form__fields">
+            <div class="form__line">
+              <div class="form__field">
+                <label for="surname" class="form__label">Фамилия*</label>
+                <input type="text" id="surname" class="form__input" required>
+              </div>
+              <div class="form__field">
+                <label for="name" class="form__label">Имя*</label>
+                <input type="text" id="name" class="form__input" required>
+              </div>
             </div>
             <div class="form__field">
-              <label for="name" class="form__label">Имя*</label>
-              <input type="text" id="name" class="form__input" required>
+              <label for="patronic" class="form__label">Отчество</label>
+              <input type="text" id="patronic" class="form__input">
+            </div>
+            <div class="form__field">
+              <label for="date" class="form__label">День, месяц и год рождения*</label>
+              <input type="date" id="date" class="form__input">
+            </div>
+            <div class="form__field">
+              <label for="email" class="form__label">Электронная почта*</label>
+              <input type="email" id="email" class="form__input" required>
+            </div>
+            <div class="form__field">
+              <label for="phone" class="form__label">Номер телефона*</label>
+              <input type="tel" id="phone" class="form__input" required>
             </div>
           </div>
-          <div class="form__field">
-            <label for="patronic" class="form__label">Отчество</label>
-            <input type="text" id="patronic" class="form__input">
+          <div class="form__fields">
+            <div class="form__field">
+              <label for="work" class="form__label">Место работы*</label>
+              <select id="work" class="form__select" required>
+                <option value="" selected disabled>Выберите из списка</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="position" class="form__label">Должность*</label>
+              <input type="text" id="position" class="form__input" required>
+            </div>
+            <div class="form__field">
+              <label for="education" class="form__label">Образование*</label>
+              <select id="education" class="form__select" required>
+                <option value="" selected disabled>Выберите из списка</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="speciality" class="form__label">Специальность*</label>
+              <input type="text" id="speciality" class="form__input" required>
+            </div>
+            <div class="form__field">
+              <label for="speciality" class="form__label">Профессиональная переподготовка (специальность) </label>
+              <input type="text" id="speciality" class="form__input" placeholder="Укажите название специальности">
+            </div>
+            <div class="form__field">
+              <label for="speciality" class="form__label">Наличие действующего сертификата специалиста/аккредитация</label>
+              <input type="text" id="speciality" class="form__input" placeholder="Укажите специальность действующего сертификата/аккреди...">
+            </div>
           </div>
-          <div class="form__field">
-            <label for="date" class="form__label">День, месяц и год рождения*</label>
-            <input type="date" id="date" class="form__input">
+          <div class="form__fields">
+            <div class="form__field">
+              <p class="form__subtitle">Придумайте пароль для учётной записи личного кабинета</p>
+              <input type="password" class="form__input" placeholder="Придумайте пароль">
+            </div>
+            <div class="form__field">
+              <input type="password" class="form__input" placeholder="Повторите ваш пароль">
+            </div>
           </div>
-          <div class="form__field">
-            <label for="email" class="form__label">Электронная почта*</label>
-            <input type="email" id="email" class="form__input" required>
+          <div class="form__fields">
+            <input type="checkbox" id="checkbox" class="form__checkbox">
+            <label for="checkbox" class="form__checkbox-label">Я даю своё <a href="#">согласие на обработку  персональных данных</a></label>
           </div>
-          <div class="form__field">
-            <label for="phone" class="form__label">Номер телефона*</label>
-            <input type="tel" id="phone" class="form__input" required>
-          </div>
+          <button type="submit" class="btn form__btn">Зарегистрироваться</button>
+        </form>
+        <div class="login__comment login__comment--top">Поля со звёздочкой обязательны к заполению</div>
+        <div class="login__comment">
+          <ul>
+            <li>Пароль не может быть короче 8 символов</li>
+            <li>В пароле должна быть минимум одна цифра</li>
+            <li>В пароле должна быть минимум одна прописная буква</li>
+            <li>В пароле должна быть минимум одна строчная буква</li>
+          </ul>
         </div>
-        <div class="form__fields">
-          <label for="work" class="form__label">Место работы*</label>
-          <select id="work" class="form__select" required>
-            <option value="">Выберите из списка</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-        <div class="form__fields">
-          <label for="position" class="form__label">Должность*</label>
-          <input type="text" id="position" class="form__input" required>
-        </div>
-        <div class="form__fields">
-          <label for="education" class="form__label">Образование*</label>
-          <select id="education" class="form__select" required>
-            <option value="">Выберите из списка</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-        <div class="form__fields">
-          <label for="speciality" class="form__label">Специальность*</label>
-          <input type="text" id="speciality" class="form__input" required>
-        </div>
-        <div class="form__fields">
-          <label for="speciality" class="form__label">Профессиональная переподготовка (специальность) </label>
-          <input type="text" id="speciality" class="form__input" placeholder="Укажите название специальности">
-        </div>
-        <div class="form__fields">
-          <label for="speciality" class="form__label">Наличие действующего сертификата специалиста/аккредитация</label>
-          <input type="text" id="speciality" class="form__input" placeholder="Укажите специальность действующего сертификата/аккреди...">
-        </div>
-        <div class="form__fields">
-          <p class="login__subtitle">Придумайте пароль для учётной записи личного кабинета</p>
-          <input type="password" class="form__input" placeholder="Придумайте пароль">
-          <input type="password" class="form__input" placeholder="Повторите ваш пароль">
-        </div>
-        <div class="form__fields">
-          <input type="checkbox" id="checkbox" class="form__checkbox">
-          <label for="checkbox" class="form__checkbox-label">Я даю своё <a href="#">согласие на обработку  персональных данных</a></label>
-        </div>
-        <button type="submit" class="btn form__btn">Зарегистрироваться</button>
-      </form>
-      <div class="login__comment login__comment--top">Поля со звёздочкой обязательны к заполению</div>
-      <div class="login__comment">
-        <ul>
-          <li>Пароль не может быть короче 8 символов</li>
-          <li>В пароле должна быть минимум одна цифра</li>
-          <li>В пароле должна быть минимум одна прописная буква</li>
-          <li>В пароле должна быть минимум одна строчная буква</li>
-        </ul>
       </div>
     </div>
   </main>

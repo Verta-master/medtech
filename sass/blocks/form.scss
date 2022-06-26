@@ -4,19 +4,39 @@
 }
 .form__fields {
   padding: 24px 20px;
+  margin-bottom: 8px;
   background: #FBFBFC;
   border-radius: 4px;
+  
+  .form__field:last-of-type {
+    margin-bottom: 0;
+  }
 }
 .form__field {
   margin-bottom: 24px;
 }
 .form__label {
   display: block;
+  margin-top: 0;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+  
+  &--pass {
+    margin-bottom: 24px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #094DF1;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
 }
 .form__select,
 .form__input {
@@ -37,13 +57,30 @@
   }
 }
 .form__select {
-  
+  appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px 20px;
+
+  option[disabled] {
+    display: none;
+  }
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
 }
 .form__line {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  
+  .form__field {
+    margin-bottom: 0;
+  }
 }
 .form__checkbox {
   display: none;
@@ -84,4 +121,12 @@
 }
 .form__comment {
   text-align: center;
+}
+.form__subtitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
 }
