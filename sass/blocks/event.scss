@@ -6,6 +6,12 @@
     .event__slide {
       background: #001547;
       color: #F2F2F2;
+      
+      &:hover,
+      &:active {
+        background: #05319B;
+        box-shadow: 6px 12px 39px rgba(1, 32, 108, 0.36);
+      }
     }
     .title-3 {
       color: #fff;
@@ -18,6 +24,15 @@
       
       span::after {
         background-image: url(../img/icons/arrow.svg);
+      }
+      &:hover,
+      &:active {
+        color: #BDBDBD !important;
+        
+        span::after {
+          filter: none;
+          opacity: 0.6;
+        }
       }
     }
   }
@@ -35,6 +50,14 @@
   background: #E6EDFF;
   border-radius: 20px;
   overflow: hidden;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background: #E6F3FF;
+    box-shadow: 6px 12px 39px rgba(3, 60, 108, 0.12);
+    transition: ease-out 0.3s;
+  }
 }
 .event__link {
   position: relative;
@@ -52,20 +75,11 @@
   }
   .title-3 {
     margin-bottom: 20px;
-    transition: ease-out 0.3s;
   }
   .title-3 + p {
     margin-top: auto;
     margin-bottom: 0;
     height: 120px;
-  }
-  &:hover,
-  &:active {
-    .more,
-    .title-3 {
-      color: #094DF1;
-      transition: ease-out 0.3s;
-    }
   }
 }
 .event__time {
@@ -166,6 +180,7 @@
   }
 }
 .event__bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

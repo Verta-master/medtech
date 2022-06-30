@@ -111,6 +111,8 @@ button {
   outline: none;
 }
 .link {
+  position: relative;
+  display: block;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.3;
@@ -120,13 +122,48 @@ button {
   color: #094DF1;
   transition: ease-out 0.3s;
   
+  &::before {
+    display: none;
+    content: attr(data-title);
+    position: absolute;
+    z-index: 5;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 310px;
+    padding: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    text-align: left;
+    text-transform: none;
+    background: #333333;
+    border-radius: 4px;
+  }
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 105%;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #333333;
+    transform: rotate(45deg);
+  }
   &:hover,
   &:active {
     color: #333;
     transition: ease-out 0.3s;
+    
+    &::before,
+    &::after {
+      display: block;
+    }
   }
 }
 .more {
+  position: relative;
   display: block;
   margin: 0;
   font-weight: 400;
@@ -157,9 +194,44 @@ button {
     height: 36px;
     background-image: url(../img/icons/disturb.svg) !important;
   }
+  &::before {
+    display: none;
+    content: attr(data-title);
+    position: absolute;
+    bottom: 110%;
+    left: 25%;
+    z-index: 5;
+    width: 310px;
+    padding: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    background: #333333;
+    border-radius: 4px;
+  }
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 100%;
+    left: 27%;
+    width: 20px;
+    height: 20px;
+    background: #333333;
+    transform: rotate(45deg);
+  }
   &:hover,
   &:active {
-    color: #094DF1;
+    color: #828282 !important;
     transition: ease-out 0.3s;
+    
+    span::after {
+      filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(277deg) brightness(97%) contrast(86%);
+    }
+    &::before,
+    &::after {
+      display: block;
+    }
   }
 }

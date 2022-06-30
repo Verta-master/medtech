@@ -116,6 +116,7 @@
   .platform__line {
     text-align: center;
     padding-top: 0;
+    border-top: 0;
   }
   .platform__btn {
     display: block;
@@ -138,6 +139,8 @@
     margin-top: 62px;
   }
   .link {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     line-height: 28px;
   }
@@ -356,6 +359,7 @@
     padding: 0;
   }
 }
+//---------------------------------------------------------
 @media (max-width: 1000px) {
   .platform__date {
     top: 104px;
@@ -366,5 +370,274 @@
     margin-right: auto;
     font-size: 32px;
     line-height: 40px;
+  }
+  .popup {
+    padding: 16px;
+    background: #FFFFFF;
+    border-radius: 24px;
+  }
+  .popup__wrap {
+    width: 100%;
+    padding: 0;
+    padding-right: 80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .popup__title {
+    margin-bottom: 12px;
+  }
+  .popup__list {
+    margin-bottom: 20px;
+  }
+  .popup__link {
+    span {
+      display: none;
+    }
+  }
+}
+//---------------------------------------------------------
+@media (max-width: 600px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .promo__logos {
+    display: block;
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2F80ED;
+  }
+  .promo__logos img {
+    margin-right: 0;
+    margin-bottom: 6px;
+    height: 32px;
+    width: auto;
+  }
+  .promo h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .promo h1 span {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .promo__text {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .btn {
+    height: 48px;
+    font-size: 16px;
+  }
+  .title,
+  .title-2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .platform__title .title {
+    margin-bottom: 12px;
+  }
+  .link,
+  .platform__title blockquote {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .platform__title {
+    margin-bottom: 40px;
+  }
+  .platform__block .title-2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .platform__block {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .platform__date {
+    width: 100%;
+    top: 80px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .platform__icon {
+    margin-left: auto;
+  }
+  .course__slider .event__slide {
+    width: 280px;
+  }
+  .course {
+    margin-bottom: 64px;
+  }
+  .base .title {
+    margin-bottom: 24px;
+  }
+  .base__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .base__item a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .base__title span::after {
+    top: -3px;
+    left: 107%;
+  }
+  .base__item p {
+    color: #828282;
+  }
+  .faq .title {
+    margin-bottom: 31px;
+  }
+  .faq__title {
+    padding-left: 10px;
+    padding-right: 34px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .faq__dropdown {
+    padding-left: 10px;
+    padding-right: 34px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .faq__item {
+    margin-bottom: 10px;
+  }
+  .reg__wrap {
+    padding-left: 0;
+  }
+  .reg .title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #094DF1;
+  }
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+//---------------------------------------------------------
+@media (max-width: 480px) {
+  .promo {
+    padding-top: 16px;
+    padding-bottom: 88px;
+  }
+  .platform__title blockquote {
+    padding-left: 22px;
+    padding-right: 0;
+  }
+  .platform__date {
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: left;
+  }
+  .platform__tags {
+    margin-top: 80px;
+  }
+  .platform__block {
+    margin-bottom: 12px;
+  }
+  .platform__block .title-2 {
+    margin-bottom: 30px;
+  }
+  .event {
+    margin-top: 42px;
+  }
+  .event__prev,
+  .event__next {
+    display: block;
+    top: -62px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/next-mobile.svg);
+  }
+  .event__prev {
+    right: 33px;
+  }
+  .event__slide {
+    width: 280px;
+  }
+  .event .title {
+    margin-bottom: 24px;
+  }
+  .event__slider {
+    margin-left: -10px;
+  }
+  .platform__title--light .title {
+    padding-right: 0;
+  }
+  .platform__title .title {
+    line-height: 36px;
+  }
+  .platform {
+    padding-top: 28px;
+    
+    &--top {
+      padding-top: 24px;
+    }
+  }
+  .platform__icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 4px;
+  }
+  .platform__list {
+    margin-top: 44px;
+    margin-bottom: 48px;
+  }
+  .platform__text {
+    height: auto;
+    padding: 24px 25px;
+  }
+  .platform__item,
+  .platform__item:nth-child(2) {
+    margin-bottom: 17px;
+  }
+  .course__title {
+    margin-bottom: 36px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .base__block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .base__title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .base__list {
+    padding-right: 10px;
+  }
+  .faq {
+    padding-top: 90px;
+    padding-bottom: 237px;
+  }
+  .faq__title::after {
+    right: 10px;
+    top: 24px;
+  }
+  .faq__title {
+    padding-bottom: 12px;
+  }
+  .faq__dropdown {
+    padding-right: 10px;
+  }
+  .faq__item {
+    border-radius: 32px;
+  }
+  .faq__list {
+    margin-bottom: 64px;
+  }
+  .promo__btn,
+  .reg__btn {
+    width: 100%;
+  }
+  .footer__wrap span {
+    margin-bottom: 30px;
   }
 }
