@@ -70,8 +70,6 @@
 }
 .platform__tags {
   padding-bottom: 14px;
-}
-.platform__dropdown {
   display: flex;
   flex-wrap: wrap;
 }
@@ -170,6 +168,6 @@
     margin: 0;
   }
 }
-.platform__btn {
+.platform__mobile {
   display: none;
 }

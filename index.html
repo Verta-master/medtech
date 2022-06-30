@@ -7,6 +7,7 @@
   <title>Title</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/nice-select.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -81,23 +82,29 @@
         <div class="platform__block platform__block--bg">
           <p class="title-2">Выберите тему для будущей дискуссии</p>
           <div class="platform__tags">
-            <button type="button" class="platform__btn"></button>
-            <div class="platform__dropdown">
-              <input type="checkbox" id="checkbox1" class="platform__checkbox">
-              <label for="checkbox1" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</label>
-              <input type="checkbox" id="checkbox2" class="platform__checkbox" checked>
-              <label for="checkbox2" class="platform__tag">ФОРУМ-2022</label>
-              <input type="checkbox" id="checkbox3" class="platform__checkbox" checked>
-              <label for="checkbox3" class="platform__tag">НЕЙРОФОРУМ-2022</label>
-              <input type="checkbox" id="checkbox4" class="platform__checkbox" checked>
-              <label for="checkbox4" class="platform__tag">Из медицины в Data Science. Из<br>Data Science в медицину</label>
-              <input type="checkbox" id="checkbox5" class="platform__checkbox">
-              <label for="checkbox5" class="platform__tag">EXPO-RUSSIA KYRGYZSTAN 2022</label>
-              <input type="checkbox" id="checkbox6" class="platform__checkbox">
-              <label for="checkbox6" class="platform__tag">RUSSIA medical</label>
-              <input type="checkbox" id="checkbox7" class="platform__checkbox">
-              <label for="checkbox7" class="platform__tag">Злокачественная гипертермия:<br>профилактика</label>
-            </div>
+            <input type="checkbox" id="checkbox1" class="platform__checkbox">
+            <label for="checkbox1" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</label>
+            <input type="checkbox" id="checkbox2" class="platform__checkbox" checked>
+            <label for="checkbox2" class="platform__tag">ФОРУМ-2022</label>
+            <input type="checkbox" id="checkbox3" class="platform__checkbox" checked>
+            <label for="checkbox3" class="platform__tag">НЕЙРОФОРУМ-2022</label>
+            <input type="checkbox" id="checkbox4" class="platform__checkbox" checked>
+            <label for="checkbox4" class="platform__tag">Из медицины в Data Science. Из<br>Data Science в медицину</label>
+            <input type="checkbox" id="checkbox5" class="platform__checkbox">
+            <label for="checkbox5" class="platform__tag">EXPO-RUSSIA KYRGYZSTAN 2022</label>
+            <input type="checkbox" id="checkbox6" class="platform__checkbox">
+            <label for="checkbox6" class="platform__tag">RUSSIA medical</label>
+            <input type="checkbox" id="checkbox7" class="platform__checkbox">
+            <label for="checkbox7" class="platform__tag">Злокачественная гипертермия:<br>профилактика</label>
+          </div>
+          <div class="platform__mobile">
+            <select name="" id="" class="platform__select">
+              <option value="1" selected>Злокачественная гипертермия: профилактика, диагностика и лечение</option>
+              <option value="2">EXPO-RUSSIA KYRGYZSTAN 2022</option>
+              <option value="3">НЕЙРОФОРУМ-2022</option>
+              <option value="4">Из медицины в Data Science. Из Data Science в медицину</option>
+              <option value="5">RUSSIA medical</option>
+            </select>
           </div>
           <div class="platform__line">
             <a data-fancybox data-src="#call" href="javascript:;" class="link" data-title="Пожалуйста, ожидайте верификации вашего профиля для голосования">выбрать тему</a>
@@ -487,6 +494,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/course-slider.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
 
 <!-- Sliders -->
   <script>
@@ -531,13 +539,9 @@
     })
   </script>
   
-<!--
+<!-- Select -->
   <script>
-    $('.platform__btn').click(function() {
-      $(this).toggleClass('platform__btn--top');
-      $(this).next().slideToggle();
-    })
+    $('.platform__select').niceSelect();
   </script>
--->
 </body>
 </html>
