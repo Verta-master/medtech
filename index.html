@@ -12,6 +12,7 @@
 <body>
   <header class="header">
     <div class="wrapper">
+      <button type="button" class="menu-btn"></button>
       <div class="header__wrap">
         <nav class="menu">
           <ul class="menu__list">
@@ -58,7 +59,7 @@
           <div class="promo__text">
             <p>Онлайн-платформа, предоставляющая наиболее полноценную и актуальную информацию по клиническим исследованиям: ответы на тематические вопросы, обмен опытом, дискуссионная площадка со спикерами, обучающие семинары, проработка юридических вопросов</p>
           </div>
-          <a href="#" class="btn promo__btn">Получить доступ к платформе</a>
+          <a href="#" class="btn promo__btn">Получить доступ <span>к платформе</span></a>
         </div>
       </div>
     </section>
@@ -72,6 +73,7 @@
         <div class="platform__block platform__block--bg">
           <p class="title-2">Выберите тему для будущей дискуссии</p>
           <div class="platform__tags">
+            <button type="button" class="platform__btn"></button>
             <input type="checkbox" id="checkbox1" class="platform__checkbox">
             <label for="checkbox1" class="platform__tag">Злокачественная гипертермия: профилактика, диагностика и лечение</label>
             <input type="checkbox" id="checkbox2" class="platform__checkbox" checked>
@@ -111,19 +113,19 @@
                   <div class="swiper-slide event__slide">
                     <a data-fancybox data-src="#sign" href="javascript:;" class="event__link">
                       <p class="event__time">21 – 23 июня 2022 в 22:45</p>
-                      <p class="event__label event__label--online">онлайн</p>
                       <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
                       <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
                       <p class="more"><span>записаться</span></p>
+                      <p class="event__label event__label--online">онлайн</p>
                     </a>
                   </div>
                   <div class="swiper-slide event__slide">
                     <a data-fancybox data-src="#cancel" href="javascript:;" class="event__link">
                       <p class="event__time">23 августа 2022 в 22:45</p>
-                      <p class="event__label">Вы записаны</p>
                       <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
                       <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
                       <p class="more more--cancel"><span>отменить участие</span></p>
+                      <p class="event__label">Вы записаны</p>
                     </a>
                   </div>
                   <div class="swiper-slide event__slide">
@@ -137,10 +139,10 @@
                   <div class="swiper-slide event__slide">
                     <a href="#" class="event__link">
                       <p class="event__time">23 августа 2022 в 22:45</p>
-                      <p class="event__label">Вы записаны</p>
                       <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
                       <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
                       <p class="more more--cancel"><span>отменить участие</span></p>
+                      <p class="event__label">Вы записаны</p>
                     </a>
                   </div>
                 </div>
@@ -248,43 +250,43 @@
         
         <div class="course">
           <p class="course__title">ближайшие курсы обучения GCP</p>
-          <ul class="course__list">
-            <li class="course__item">
-              <a href="#" class="course__link">
-                <div class="course__top">
-                  <p class="course__time">21 – 23 июня 2022</p>
-                  <p class="course__online">онлайн</p>
+          <div class="event__wrap">
+            <div class="swiper-container event__slider course__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide event__slide">
+                  <a href="#" class="event__link">
+                    <p class="event__time">21 – 23 июня 2022 в 22:45</p>
+                    <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
+                    <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
+                    <div class="event__bottom">
+                      <p class="more"><span>записаться</span></p>
+                      <p class="event__clocks"><span>136 часов</span></p>
+                    </div>
+                    <p class="event__label event__label--online">онлайн</p>
+                  </a>
                 </div>
-                <p class="title-3">Из медицины в Data Science. Из Data Science в медицину</p>
-                <p>Обсудим тренды развития искусственного интеллекта в здравоохранении, как data science помогает уже сейчас побеждать болезни и как построить перспективную карьеру аналитиком в медицинской сфере</p>
-                <div class="course__bottom">
-                  <p class="more"><span>записаться</span></p>
-                  <p class="course__clocks"><span>136 часов</span></p>
+                <div class="swiper-slide event__slide">
+                  <a href="#" class="event__link">
+                    <p class="event__time">23 августа 2022 в 22:45</p>
+                    <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
+                    <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
+                    <div class="event__bottom">
+                      <p class="more"><span>записаться</span></p>
+                      <p class="event__clocks"><span>136 часов</span></p>
+                    </div>
+                    <p class="event__label event__label--text">Осталось 256 мест</p>
+                  </a>
                 </div>
-              </a>
-            </li>
-            <li class="course__item">
-              <a href="#" class="course__link">
-                <div class="course__top">
-                  <p class="course__time">23 августа 2022</p>
-                  <p class="course__time">Осталось 256 мест</p>
-                </div>
-                <p class="title-3">EXPO-RUSSIA KYRGYZSTAN 2022</p>
-                <p>Первая международная промышленная выставка «EXPO-RUSSIA KYRGYZSTAN 2022» и Российско-кыргызский межрегиональный бизнес-форум</p>
-                <div class="course__bottom">
-                  <p class="more"><span>записаться</span></p>
-                  <p class="course__clocks"><span>136 часов</span></p>
-                </div>
-              </a>
-            </li>
-          </ul>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div class="base">
           <p class="title">нормативная база</p>
           <div class="base__wrap">
             <div class="base__block">
-              <p class="base__title">Международные документы</p>
+              <p class="base__title"><span>Международные документы</span></p>
               <ul class="base__list">
                 <li class="base__item"><a href="#">Интегрированное дополнение к ICH E6(R1): Руководство по надлежащей клинической практике E6(R2) / Integrated Addendum to ICH E6(R1): Guideline for Good Clinical Practice E6(R2)</a></li>
                 <li class="base__item"><a href="#">Регламент (ЕС) N 536/2014 Европейского Парламента и Совета ЕС о клинических испытаниях лекарственных средств, предназначенных для использования человеком, и об отмене директивы 2001/20/ЕС</a></li>
@@ -473,6 +475,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/course-slider.js"></script>
 
 <!-- Sliders -->
   <script>
@@ -484,7 +487,12 @@
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 12,
+      breakpoints: {
+        1200: {
+          spaceBetween: 20,
+        }
+      }
     });
     
     var mySwiper = new Swiper ('.event__slider--02', {
@@ -495,7 +503,12 @@
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 12,
+      breakpoints: {
+        1200: {
+          spaceBetween: 20,
+        }
+      }
     });
   </script>
   
