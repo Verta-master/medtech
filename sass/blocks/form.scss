@@ -311,6 +311,7 @@
 }
 .form__message {
   position: absolute;
+  z-index: 5;
   top: 104%;
   left: 0;
   right: 0;
