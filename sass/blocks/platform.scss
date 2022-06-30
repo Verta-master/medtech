@@ -69,9 +69,11 @@
   }
 }
 .platform__tags {
+  padding-bottom: 14px;
+}
+.platform__dropdown {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 14px;
 }
 .platform__tag {
   height: 64px;

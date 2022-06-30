@@ -1,0 +1,56 @@
+Изменения в разметке главной страницы:
+
+1) В меню добавить кнопку для открытия:
+
+<header class="header">
+    <div class="wrapper">
+      <button type="button" class="menu-btn"></button>
+   ...
+   
+2)На кнопке .promo__btn добавить спаны к части текста:
+
+<a href="#" class="btn promo__btn">Получить доступ <span>к платформе</span></a>
+
+3) Добавить кнопку .platform__btn в теги для раскрывающегося списка и доп.обертку для всех меток .platform__dropdown:
+
+<div class="platform__tags">
+	<button type="button" class="platform__btn"></button>
+	<div class="platform__dropdown">
+	...
+	
+4) Заголовок .base__title добавить внутри спаны:
+
+<p class="base__title"> <span>Международные документы</span></p>
+
+5) Изменения в разметке блока .course - убрать список .course__list и вместо него добавить разметку слайдера:
+
+<div class="event__wrap">
+   <div class="swiper-container event__slider course__slider">
+   ...
+   
+и скрипт к нему:
+
+<script src="js/course-slider.js"></script>
+
+5) Изменения в разметке слайдеров .event__slider - в каждом слайде, если есть метка с классом .event__label, передвинуть ее из верхней части разметки слайда в самый низ перед закрывающимся тегом </а>
+
+6) В верстку слайдеров добавлена подсказка при наведении на ссылку через data-title:
+
+<p class="more" data-title="Ожидайте верификации вашего профиля для участия в мероприятиях дискуссионной площадки. Уведомление о результатах верификации придёт на e-mail указанный Вами при регистрации"><span>смотреть</span></p>
+
+7) В попапах на ссылку добавить спан на слово "вернуться":
+
+<a href="#" class="popup__link"><span>вернуться</span> на сайт</a>
+
+8) Изменения в шапке - В блок .header__wrap добавлены блоки:
+
+<div class="logo">
+  <img src="img/images/logo-1.png" alt="Московский центр иновационных технологий в здравоохранении" width="288" height="60">
+  <img src="img/images/logo-2.png" alt="Комплекс социального развития Москвы" width="138" height="54">
+</div>
+...
+<div class="header__contacts">
+  <a href="mailto:support@medtech.ru">support@medtech.ru</a>
+  <a href="tel:+74956503232">8-495-650-32-32</a>
+</div>
+
